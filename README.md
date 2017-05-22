@@ -1,4 +1,10 @@
-# Control the Raspberry PI Camera Movement using your Smartphone
+# Raspberry PI Camera Movement Control
+## Control your Raspberry PI Camera by using your Smartphone
+In this project I have created a Remote Camera Control Prototype with a Raspberry PI. The Raspberry PI Camera is attached to a Pan/Tilt Kit with two servo-motors for X and Y Movement. You can control the motor's movement with sensors integrated in your Smartphone by simply opening up a Web Page in your Browser. The Project is using the MQTT Protocol to send the Smartphone's sensor data to your Raspberry. The required Web Application is stored on your Windows Computer which acts as the MQTT Server.
+
+## How Does It Work?
+Your Windows PC is using a local Apache Server to host the Web Application. After opening the Web Application on your Smartphone's Browser the Application processes the Phone's Sensor Data and sends them to multiple MQTT Channels. 
+The Software running on the Raspberry is listening to any incoming MQTT Messages from your MQTT Server (Windows PC) and sends the converted Sensor Data as PWM Signals the servo-motors of the Camera Pan/Tilt Kit.
 
 ## Hardware
 This Prototype uses the following components:
@@ -9,7 +15,7 @@ http://www.exp-tech.de/raspberry-pi-kamerahalterung?gclid=Cj0KEQiA08rBBR-DUn4qpr
 #### Pan-Tilt Kit with Servo-Motors:
 http://www.exp-tech.de/dagu-pan-tilt-kit-with-servos?gclid=Cj0KEQiA08rBBR-DUn4qproqwzYMBEiQAqpzns8qGGMGf9-_mTLiQbipMpNHeQY-E8uau1437SaPlqqcaAlt18P8HAQ
 
-## Installation
+# Installation
 ### Server (Windows PC)
 - Install XAMPP: https://www.apachefriends.org/de/download.html
 - Extract mqtt folder to C:\xampp\htdocs
@@ -46,10 +52,13 @@ $ sudo python start.py
 - Press Move To Start Position
 - Press Start Movement
 - Now you can move the Camera-Pan-Tilt-Kit by rotating your Smartphone
-### Video Livestream (only working on a Desktop Browser)
+
+
+
+## Video Livestream (only working on a Desktop Browser)
 NOTE: In this Prototype you can only view a Livestream of the Raspberry PI Camera on a Desktop PC and not on your Smartphone. 
 Therefore open up the Webapplication on your Windows PC's Browser to see the Video: [Windows-IP-Adress]/rasp
-#### Raspberry PI:
+### Raspberry PI:
 - Change IP-Adress in /Desktop/mover/settings.json to the Server (Windows) IP
 - Install FFMPEG on Raspberry:
 ```
@@ -66,7 +75,7 @@ cd ffmpeg
 make -j4
 sudo make install
 ```
-#### Server (Windows PC)
+### Server (Windows PC)
 - Google Chrome Browser: localhost/rasp
 - Install node.js on Windows: https://nodejs.org/en/download/
 - Restart System and open cmd.exe
