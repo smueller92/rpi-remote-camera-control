@@ -1,5 +1,14 @@
 # Control the Raspberry PI Camera Movement using your Smartphone
 
+## Hardware
+This Prototype uses the following components:
+#### Raspberry PI 3 (with WLAN Module)
+#### Raspberry PI Camera
+#### Camera Bracket:
+http://www.exp-tech.de/raspberry-pi-kamerahalterung?gclid=Cj0KEQiA08rBBR-DUn4qproqwzYMBEiQAqpzns2OCN2veDyvJ5fQdBhPXfeCb0ru8NBU-TeEDS6dJiy_oaAkUo8P8HAQ
+#### Pan-Tilt Kit with Servo-Motors:
+http://www.exp-tech.de/dagu-pan-tilt-kit-with-servos?gclid=Cj0KEQiA08rBBR-DUn4qproqwzYMBEiQAqpzns8qGGMGf9-_mTLiQbipMpNHeQY-E8uau1437SaPlqqcaAlt18P8HAQ
+
 ## Installation
 ### Server (Windows PC)
 - Install XAMPP: https://www.apachefriends.org/de/download.html
@@ -9,7 +18,8 @@
 - Note your IPv4-Adress
 - This sets up the Webapplication (MQTT Server) which you can later access using your Smartphone
 ### Raspberry PI
-- Start Raspberry and open up the Terminal
+- Start Raspberry and connect it to the Internet
+- Open up the Terminal
 ```
 $ ifconfig
 ```
