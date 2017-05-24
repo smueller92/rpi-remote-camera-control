@@ -1,0 +1,6 @@
+{
+	"ip":"broker.mqttdashboard.com",
+	"port":"1883",
+	"systemid":"appDesignSyst3m1",
+	"targetIp":"192.168.2.30"
+}

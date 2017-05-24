@@ -1,0 +1,15 @@
+2017-01-10 15:43:59,993 INFO  - Starting HiveMQ Server
+2017-01-10 15:44:00,008 INFO  - HiveMQ version: 3.0.1
+2017-01-10 15:44:00,008 INFO  - HiveMQ home directory: C:\Users\alex__000\Desktop\mqttBroker\hivemq-3.0.1
+2017-01-10 15:44:01,973 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2017-01-10 15:44:03,000 INFO  - The HiveMQ cluster ID is 2358b74e-cb8a-40dd-9ab8-54e3e6d7ddc8
+2017-01-10 15:44:03,185 INFO  - Loaded Plugin HiveMQ JMX Metrics Reporting Plugin - v3.0.0
+2017-01-10 15:44:03,185 INFO  - Loaded Plugin HiveMQ Sys Topic Plugin - v3.0.0
+2017-01-10 15:44:03,185 INFO  - Loaded Plugin HiveMQ MQTT Message Log Plugin - v3.0.0
+2017-01-10 15:44:03,201 INFO  - JMX Metrics Reporting started.
+2017-01-10 15:44:03,216 INFO  - Starting TCP listener on address 172.17.205.246 and port 1884
+2017-01-10 15:44:03,409 INFO  - Starting Websocket listener on address 172.17.205.246 and port 8000
+2017-01-10 15:44:03,421 INFO  - Started TCP Listener on address 172.17.205.246 and on port 1884
+2017-01-10 15:44:03,422 INFO  - Started Websocket Listener on address 172.17.205.246 and on port 8000
+2017-01-10 15:44:03,423 INFO  - Started HiveMQ in 3409ms
+2017-01-10 15:44:03,790 INFO  - A new HiveMQ Version (3.2.1) is available. Visit http://www.hivemq.com/ for more details.

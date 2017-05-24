@@ -1,0 +1,58 @@
+{
+"startPosition": [
+	{
+	"Command": "motorMiddle",
+	"Options": ["alphaMotorServoNum", "gammaMotorServoNum"],
+	"Servoblaster": "true",
+	"VaryingMoves": "false"
+	}
+  ],
+"leftPosition": [
+	{
+	"Command": "motorLeft",
+	"Options": ["alphaMotorServoNum", "gammaMotorServoNum"],
+	"Servoblaster": "true",
+	"VaryingMoves": "false"
+	}
+  ],
+"rightPosition": [
+	{
+	"Command": "motorRight",
+	"Options": ["alphaMotorServoNum", "gammaMotorServoNum"],
+	"Servoblaster": "true",
+	"VaryingMoves": "false"
+	}
+  ],
+"alpha": [
+	{
+	"Command": "moveServoAlpha",
+	"Options": ["alphaMotorServoNum"],
+	"Servoblaster": "true",
+	"VaryingMoves": "true"
+	}
+  ],
+"gamma": [
+	{
+	"Command": "moveServoAlpha",
+	"Options": ["gammaMotorServoNum"],
+	"Servoblaster": "true",
+	"VaryingMoves": "true"
+	}
+  ],
+"startVideo": [
+	{
+	"Command": "startVideo",
+	"Options": [],
+	"Servoblaster": "false",
+	"VaryingMoves": "false"
+	}
+  ],
+"stopVideo": [
+	{
+	"Command": "stopVideo",
+	"Options": [],
+	"Servoblaster": "false",
+	"VaryingMoves": "false"
+	}
+  ]
+}

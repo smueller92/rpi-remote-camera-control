@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=320, initial-scale=1"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script src="mqttBroker/mqttws31.js" type="text/javascript"></script>
+    <script src="js/mqtt.js" type="text/javascript"></script>
+	<script src="js/sensor.js" type="text/javascript"></script>
+	<script type="text/javascript" src="jsmpeg/jsmpg.js"></script>
+    <title>MQTT Cam Mover</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="connect">
+<form class="panel-body">
+    <h3>Please insert data</h3>
+    <div class="form-group">
+        <label for='brokerIP'>BrokerIP:</label>
+        <input type='text' id='brokerIP' />
+    </div>
+
+    <div class="form-group">
+        <label for='brokerPort'>Broker Port:</label>
+        <input type="number" id='brokerPort' />
+    </div>
+    <div class="form-group">
+        <label for='systemID'>SystemID:</label>
+        <input type='text' id='systemID' />
+    </div>
+    <input type='button' class="btn btn-success" onclick="connectToBroker()" id='sendConf' value='Connect' /><br><br>
+</form>
+</div>
+
+<div id="mainStuff">
+<div><button class="btn btn-info" onclick="moveToStartPosition()">Move To Start Formation</button></div><br>
+<div><button class="btn btn-primary" onclick="startReadingMoves()">Start Movement</button></div><br>
+<div><button class="btn btn-primary" onclick="startVideo()">Start Livestream</button></div><br>
+<div><button class="btn btn-primary" onclick="stopVideo()">Stop Livestream</button></div><br>
+<div><button class="btn btn-danger" onclick="disconnectIt();">Disconnect</button></div><br>
+    <strong>  To see the livestream visit this Website in a desktop-browser</strong>
+    <br><br>
+
+Bewegung:<br>
+ConvertedAlpha:<span id="convertedAlpha"></span><br>
+ConvertedGamma:<span id="convertedGamma"></span><br>
+RawAlpha:<span id="alpha"></span><br>
+beta:<span id="beta"></span><br>
+gamma:<span id="gamma"></span><br>
+<div id="messages"></div>
+
+    <button onclick="client.subscribe( baseTopic + '/' + systemID + '/#', {qos: 2}); alert('Subscribed');">1. Subscribe</button>
+    <button onclick="publish('button clicked !',infoTopic,2);">2. Test Publish</button>
+    <button onclick="moveToRightPosition()">Move To Max Right Position</button>
+    <button onclick="moveToLeftPosition()">Move To max. Left Formation</button>
+</div>
+
+<div id="video">
+<canvas id="videoCanvas" width="640" height="480">
+    <p>
+        Please use a browser that supports the Canvas Element, like
+        <a href="http://www.google.com/chrome">Chrome</a>,
+        <a href="http://www.mozilla.com/firefox/">Firefox</a>,
+        <a href="http://www.apple.com/safari/">Safari</a> or Internet Explorer 10
+    </p>
+</canvas>
+
+<script>
+
+// ACHTUNG: Hier hardgecoded wegen Laufzeitproblemen
+// Websocket ist hier hardgecoded, weil durch das Auslagern von VideoServerIP/VideoServerPort
+// diese beiden Daten zu spät geladen werden und vom Websocket nicht gefunden werden können (undefined). 
+// client = new WebSocket( 'ws://' + VideoServerIP + ':' + VideoServerPort + '/' );
+// Logik für die Auslagerung ist in mqtt.js und config.json enthalten, jedoch funktioniert nur dieser Weg:
+
+// Setup the Livestream WebSocket connection and start the player
+// ws://WINDOWS-IPADRESS:8084/ as defined in config.json
+client = new WebSocket( 'ws://192.168.2.30:8084/' );
+canvas = document.getElementById('videoCanvas');
+player = new jsmpeg(client, {canvas:canvas});
+</script>
+
+</div>
+
+
+</body>
+</html>

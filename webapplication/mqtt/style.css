@@ -1,0 +1,37 @@
+#connect {
+    text-align: center;
+}
+.connectInvisible {
+    display:none;
+}
+.connectVisible {
+    display:block;
+}
+
+#video {
+    margin-top:20px;
+    text-align: center;
+    display:none;
+}
+
+@media (min-width: 768px) {
+    #video {
+        display: block;
+    }
+}
+#videoCanvas {
+    background-color: lightgrey;
+}
+#mainStuff{
+    margin-top:5%;
+text-align: center;
+    display:none;
+}
+#mobileStuff {
+    display:block;
+}
+@media (min-width: 768px) {
+    #mobileStuff{
+        display: none;
+    }
+}

@@ -1,0 +1,20 @@
+{
+"baseTopic":"Ahoii",
+"startPositionTopic":"startPosition",
+"testTopic":"Test",
+"alphaTopic":"alpha",
+"gammaTopic":"gamma",
+"startMessage":"startPosition",
+"rightMessage":"maxRightPosition",
+"leftMessage":"maxLeftPosition",
+"connectionInfoMessage":"Connected and subscribed to Topic: ",
+"alphaMaxRight":"50",
+"alphaMiddle":"150",
+"alphaMaxLeft":"250",
+"gammaMaxTop":"85",
+"gammaMiddle":"150",
+"gammaMaxBottom":"185",
+"alphaMotorServoNum":"0",
+"gammaMotorServoNum":"1",
+"servoblaster":"servoblaster"	
+}

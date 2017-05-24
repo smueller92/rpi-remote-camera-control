@@ -1,0 +1,2 @@
+ffmpeg -s 320x240 -f video4linux2 -i /dev/video0 -f mpeg1video \-b 800k -r 30 http://192.168.137.1:8082/admin/320/240/
+sudo modprobe bcm2835-v4l2

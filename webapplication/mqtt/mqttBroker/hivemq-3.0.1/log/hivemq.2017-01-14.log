@@ -1,0 +1,71 @@
+2017-01-14 16:29:39,161 INFO  - Starting HiveMQ Server
+2017-01-14 16:29:39,179 INFO  - HiveMQ version: 3.0.1
+2017-01-14 16:29:39,180 INFO  - HiveMQ home directory: C:\xampp\htdocs\rasp\mqttBroker\hivemq-3.0.1
+2017-01-14 16:29:41,101 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2017-01-14 16:29:42,129 INFO  - The HiveMQ cluster ID is d4084b25-dd6f-406c-8994-efb2211b54c4
+2017-01-14 16:29:42,292 INFO  - Loaded Plugin HiveMQ JMX Metrics Reporting Plugin - v3.0.0
+2017-01-14 16:29:42,295 INFO  - Loaded Plugin HiveMQ Sys Topic Plugin - v3.0.0
+2017-01-14 16:29:42,295 INFO  - Loaded Plugin HiveMQ MQTT Message Log Plugin - v3.0.0
+2017-01-14 16:29:42,310 INFO  - JMX Metrics Reporting started.
+2017-01-14 16:29:42,318 INFO  - Starting TCP listener on address 192.168.137.1 and port 1884
+2017-01-14 16:29:42,428 INFO  - Starting Websocket listener on address 192.168.137.1 and port 8000
+2017-01-14 16:29:42,438 INFO  - Started TCP Listener on address 192.168.137.1 and on port 1884
+2017-01-14 16:29:42,438 INFO  - Started Websocket Listener on address 192.168.137.1 and on port 8000
+2017-01-14 16:29:42,439 INFO  - Started HiveMQ in 3263ms
+2017-01-14 16:29:42,738 INFO  - A new HiveMQ Version (3.2.1) is available. Visit http://www.hivemq.com/ for more details.
+2017-01-14 16:30:53,641 INFO  - Client myclientid_37 connected
+2017-01-14 16:30:54,847 INFO  - Client myclientid_37 sent a message to topic "Ahoii/appDesignSyst3m1/Test": "startCam" (QoS: 2, retained: false)
+2017-01-14 16:32:50,459 INFO  - Starting HiveMQ Server
+2017-01-14 16:32:50,459 INFO  - HiveMQ version: 3.0.1
+2017-01-14 16:32:50,459 INFO  - HiveMQ home directory: C:\xampp\htdocs\rasp\mqttBroker\hivemq-3.0.1
+2017-01-14 16:32:51,994 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2017-01-14 16:32:52,908 INFO  - The HiveMQ cluster ID is 9c680413-e5ef-471e-b4c1-2a608520f061
+2017-01-14 16:32:53,070 INFO  - Loaded Plugin HiveMQ JMX Metrics Reporting Plugin - v3.0.0
+2017-01-14 16:32:53,070 INFO  - Loaded Plugin HiveMQ Sys Topic Plugin - v3.0.0
+2017-01-14 16:32:53,070 INFO  - Loaded Plugin HiveMQ MQTT Message Log Plugin - v3.0.0
+2017-01-14 16:32:53,070 INFO  - JMX Metrics Reporting started.
+2017-01-14 16:32:53,086 INFO  - Starting TCP listener on address 172.16.199.66 and port 1884
+2017-01-14 16:32:53,202 INFO  - Starting Websocket listener on address 172.16.199.66 and port 8000
+2017-01-14 16:32:53,208 INFO  - Started TCP Listener on address 172.16.199.66 and on port 1884
+2017-01-14 16:32:53,208 INFO  - Started Websocket Listener on address 172.16.199.66 and on port 8000
+2017-01-14 16:32:53,208 INFO  - Started HiveMQ in 2741ms
+2017-01-14 16:32:53,371 INFO  - A new HiveMQ Version (3.2.1) is available. Visit http://www.hivemq.com/ for more details.
+2017-01-14 16:34:01,721 INFO  - Client myclientid_90 connected
+2017-01-14 16:34:03,132 INFO  - Client myclientid_90 sent a message to topic "Ahoii/appDesignSyst3m1/Test": "startCam" (QoS: 2, retained: false)
+2017-01-14 16:34:08,676 INFO  - Client myclientid_90 sent DISCONNECT message
+2017-01-14 16:35:17,172 INFO  - Starting HiveMQ Server
+2017-01-14 16:35:17,172 INFO  - HiveMQ version: 3.0.1
+2017-01-14 16:35:17,172 INFO  - HiveMQ home directory: C:\xampp\htdocs\rasp\mqttBroker\hivemq-3.0.1
+2017-01-14 16:35:18,706 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2017-01-14 16:35:19,576 INFO  - The HiveMQ cluster ID is 7495aff9-4612-4cc4-8d41-d49fcfce4d47
+2017-01-14 16:35:19,761 INFO  - Loaded Plugin HiveMQ JMX Metrics Reporting Plugin - v3.0.0
+2017-01-14 16:35:19,761 INFO  - Loaded Plugin HiveMQ Sys Topic Plugin - v3.0.0
+2017-01-14 16:35:19,761 INFO  - Loaded Plugin HiveMQ MQTT Message Log Plugin - v3.0.0
+2017-01-14 16:35:19,777 INFO  - JMX Metrics Reporting started.
+2017-01-14 16:35:19,777 INFO  - Starting TCP listener on address 192.168.137.1 and port 1884
+2017-01-14 16:35:19,892 INFO  - Starting Websocket listener on address 192.168.137.1 and port 8000
+2017-01-14 16:35:19,892 INFO  - Started TCP Listener on address 192.168.137.1 and on port 1884
+2017-01-14 16:35:19,892 INFO  - Started Websocket Listener on address 192.168.137.1 and on port 8000
+2017-01-14 16:35:19,892 INFO  - Started HiveMQ in 2723ms
+2017-01-14 16:35:20,093 INFO  - A new HiveMQ Version (3.2.1) is available. Visit http://www.hivemq.com/ for more details.
+2017-01-14 16:35:24,448 INFO  - Client myclientid_49 connected
+2017-01-14 16:35:25,628 INFO  - Client myclientid_49 sent a message to topic "Ahoii/appDesignSyst3m1/Test": "startCam" (QoS: 2, retained: false)
+2017-01-14 16:37:21,918 INFO  - Client myclientid_49 disconnected
+2017-01-14 16:37:35,667 INFO  - Starting HiveMQ Server
+2017-01-14 16:37:35,667 INFO  - HiveMQ version: 3.0.1
+2017-01-14 16:37:35,682 INFO  - HiveMQ home directory: C:\xampp\htdocs\rasp\mqttBroker\hivemq-3.0.1
+2017-01-14 16:37:37,255 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2017-01-14 16:37:38,171 INFO  - The HiveMQ cluster ID is e942642b-2987-42c5-8719-388358285a79
+2017-01-14 16:37:38,340 INFO  - Loaded Plugin HiveMQ JMX Metrics Reporting Plugin - v3.0.0
+2017-01-14 16:37:38,340 INFO  - Loaded Plugin HiveMQ Sys Topic Plugin - v3.0.0
+2017-01-14 16:37:38,340 INFO  - Loaded Plugin HiveMQ MQTT Message Log Plugin - v3.0.0
+2017-01-14 16:37:38,355 INFO  - JMX Metrics Reporting started.
+2017-01-14 16:37:38,355 INFO  - Starting TCP listener on address 192.168.137.1 and port 1884
+2017-01-14 16:37:38,471 INFO  - Starting Websocket listener on address 192.168.137.1 and port 8001
+2017-01-14 16:37:38,487 INFO  - Started TCP Listener on address 192.168.137.1 and on port 1884
+2017-01-14 16:37:38,487 INFO  - Started Websocket Listener on address 192.168.137.1 and on port 8001
+2017-01-14 16:37:38,487 INFO  - Started HiveMQ in 2813ms
+2017-01-14 16:37:38,671 INFO  - A new HiveMQ Version (3.2.1) is available. Visit http://www.hivemq.com/ for more details.
+2017-01-14 16:37:48,259 INFO  - Client myclientid_30 connected
+2017-01-14 16:37:49,383 INFO  - Client myclientid_30 sent a message to topic "Ahoii/appDesignSyst3m1/Test": "startCam" (QoS: 2, retained: false)
+2017-01-14 16:37:51,150 INFO  - Client myclientid_30 disconnected

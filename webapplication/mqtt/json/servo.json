@@ -1,0 +1,9 @@
+{"servo":[
+        {
+		"minImpulse":			0.0005,
+		"middleImpulse":		0.0015,
+		"maxImpulse":			0.0025,
+		"sensorSteps":			90,
+		"servoBlasterFactor":	100000
+        }
+]}

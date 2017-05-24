@@ -1,0 +1,120 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module mqttClient</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>mqttClient</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/pi/Desktop/mover/mqttClient.py">/home/pi/Desktop/mover/mqttClient.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;-*-&nbsp;coding:&nbsp;utf-8&nbsp;-*-</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="RPi.GPIO.html">RPi.GPIO</a><br>
+</td><td width="25%" valign=top><a href="json.html">json</a><br>
+</td><td width="25%" valign=top><a href="paho.mqtt.client.html">paho.mqtt.client</a><br>
+</td><td width="25%" valign=top><a href="numbers.html">numbers</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="IClient.html#IClient">IClient.IClient</a>(<a href="__builtin__.html#object">__builtin__.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="mqttClient.html#mqttClient">mqttClient</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="mqttClient">class <strong>mqttClient</strong></a>(<a href="IClient.html#IClient">IClient.IClient</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Main&nbsp;Class&nbsp;for&nbsp;the&nbsp;current&nbsp;system.&nbsp;Implements&nbsp;<a href="IClient.html#IClient">IClient</a>.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="mqttClient.html#mqttClient">mqttClient</a></dd>
+<dd><a href="IClient.html#IClient">IClient.IClient</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="mqttClient-connect"><strong>connect</strong></a>(self, client, mqttBrokerAddress, mqttBrokerPort)</dt><dd><tt>Connects&nbsp;to&nbsp;specific&nbsp;mqttBroker&nbsp;with&nbsp;connect&nbsp;function&nbsp;of&nbsp;mqtt&nbsp;library<br>
+:param&nbsp;client:&nbsp;client&nbsp;object<br>
+:param&nbsp;mqttBrokerAddress:&nbsp;IP-Address&nbsp;of&nbsp;Mqtt&nbsp;Broker<br>
+:para&nbsp;mqttBroker&nbsp;Port:&nbsp;Port&nbsp;of&nbsp;Mqtt&nbsp;Broker</tt></dd></dl>
+
+<dl><dt><a name="mqttClient-initalize"><strong>initalize</strong></a>(self, systemID)</dt><dd><tt>Initialize&nbsp;mqtt&nbsp;Client&nbsp;of&nbsp;paho&nbsp;library<br>
+:param&nbsp;systemID:&nbsp;The&nbsp;specific&nbsp;ID&nbsp;of&nbsp;the&nbsp;RaspberryPi&nbsp;system<br>
+:return:&nbsp;Returns&nbsp;an&nbsp;mqtt-library&nbsp;object&nbsp;that&nbsp;takes&nbsp;command&nbsp;(e.g.&nbsp;connect)</tt></dd></dl>
+
+<dl><dt><a name="mqttClient-react"><strong>react</strong></a>(self, client)</dt><dd><tt>Uses&nbsp;the&nbsp;on_message&nbsp;function&nbsp;of&nbsp;the&nbsp;mqtt&nbsp;library.<br>
+When&nbsp;there&nbsp;is&nbsp;a&nbsp;new&nbsp;message&nbsp;execute&nbsp;<a href="#mqttClient-reactOnMessages">reactOnMessages</a>()&nbsp;function<br>
+:param&nbsp;client:&nbsp;client&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="mqttClient-reactOnMessages"><strong>reactOnMessages</strong></a>(self, client, userdata, msg)</dt><dd><tt>Compares&nbsp;an&nbsp;incoming&nbsp;message&nbsp;(last&nbsp;subtopic)&nbsp;with&nbsp;the&nbsp;lookuptable.json<br>
+and&nbsp;executes&nbsp;functions&nbsp;from&nbsp;the&nbsp;commands&nbsp;module.<br>
+&nbsp;<br>
+:param&nbsp;client:&nbsp;client&nbsp;object<br>
+:param&nbsp;userdata:&nbsp;user&nbsp;defined&nbsp;data&nbsp;of&nbsp;any&nbsp;type&nbsp;that&nbsp;is&nbsp;passed&nbsp;as&nbsp;the&nbsp;userdata&nbsp;parameter&nbsp;to&nbsp;callbacks<br>
+:param&nbsp;msg:&nbsp;The&nbsp;whole&nbsp;message&nbsp;object&nbsp;with&nbsp;msg.payload,&nbsp;msg.topic,&nbsp;...</tt></dd></dl>
+
+<dl><dt><a name="mqttClient-subscribe"><strong>subscribe</strong></a>(self, client)</dt><dd><tt>subscribe&nbsp;a&nbsp;client&nbsp;to&nbsp;a&nbsp;topic<br>
+:param&nbsp;client:&nbsp;client&nbsp;object</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset([])</dl>
+
+<hr>
+Data descriptors inherited from <a href="IClient.html#IClient">IClient.IClient</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="IClient.html#IClient">IClient.IClient</a>:<br>
+<dl><dt><strong>__metaclass__</strong> = &lt;class 'abc.ABCMeta'&gt;<dd><tt>Metaclass&nbsp;for&nbsp;defining&nbsp;Abstract&nbsp;Base&nbsp;Classes&nbsp;(ABCs).<br>
+&nbsp;<br>
+Use&nbsp;this&nbsp;metaclass&nbsp;to&nbsp;create&nbsp;an&nbsp;ABC.&nbsp;&nbsp;An&nbsp;ABC&nbsp;can&nbsp;be&nbsp;subclassed<br>
+directly,&nbsp;and&nbsp;then&nbsp;acts&nbsp;as&nbsp;a&nbsp;mix-in&nbsp;class.&nbsp;&nbsp;You&nbsp;can&nbsp;also&nbsp;register<br>
+unrelated&nbsp;concrete&nbsp;classes&nbsp;(even&nbsp;built-in&nbsp;classes)&nbsp;and&nbsp;unrelated<br>
+ABCs&nbsp;as&nbsp;'virtual&nbsp;subclasses'&nbsp;--&nbsp;these&nbsp;and&nbsp;their&nbsp;descendants&nbsp;will<br>
+be&nbsp;considered&nbsp;subclasses&nbsp;of&nbsp;the&nbsp;registering&nbsp;ABC&nbsp;by&nbsp;the&nbsp;built-in<br>
+issubclass()&nbsp;function,&nbsp;but&nbsp;the&nbsp;registering&nbsp;ABC&nbsp;won't&nbsp;show&nbsp;up&nbsp;in<br>
+their&nbsp;MRO&nbsp;(Method&nbsp;Resolution&nbsp;Order)&nbsp;nor&nbsp;will&nbsp;method<br>
+implementations&nbsp;defined&nbsp;by&nbsp;the&nbsp;registering&nbsp;ABC&nbsp;be&nbsp;callable&nbsp;(not<br>
+even&nbsp;via&nbsp;super()).</tt></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>baseTopic</strong> = u'Ahoii/appDesignSyst3m1'<br>
+<strong>configdata</strong> = {u'alphaMaxLeft': u'250', u'alphaMaxRight': u'50', u'alphaMiddle': u'150', u'alphaMotorServoNum': u'0', u'alphaTopic': u'alpha', u'baseTopic': u'Ahoii', u'connectionInfoMessage': u'Connected and subscribed to Topic: ', u'gammaMaxBottom': u'185', u'gammaMaxTop': u'85', u'gammaMiddle': u'150', ...}<br>
+<strong>connectionInfoMessage</strong> = u'Connected and subscribed to Topic: '<br>
+<strong>data_file</strong> = &lt;closed file 'lookuptable.json', mode 'r'&gt;<br>
+<strong>lookuptable</strong> = {u'alpha': [{u'Command': u'moveServoAlpha', u'Options': [u'alphaMotorServoNum'], u'Servoblaster': u'true', u'VaryingMoves': u'true'}], u'gamma': [{u'Command': u'moveServoAlpha', u'Options': [u'gammaMotorServoNum'], u'Servoblaster': u'true', u'VaryingMoves': u'true'}], u'leftPosition': [{u'Command': u'motorLeft', u'Options': [u'alphaMotorServoNum', u'gammaMotorServoNum'], u'Servoblaster': u'true', u'VaryingMoves': u'false'}], u'rightPosition': [{u'Command': u'motorRight', u'Options': [u'alphaMotorServoNum', u'gammaMotorServoNum'], u'Servoblaster': u'true', u'VaryingMoves': u'false'}], u'startPosition': [{u'Command': u'motorMiddle', u'Options': [u'alphaMotorServoNum', u'gammaMotorServoNum'], u'Servoblaster': u'true', u'VaryingMoves': u'false'}], u'startVideo': [{u'Command': u'startVideo', u'Options': [], u'Servoblaster': u'false', u'VaryingMoves': u'false'}]}<br>
+<strong>servoblaster</strong> = &lt;open file '/dev/servoblaster', mode 'w'&gt;<br>
+<strong>settingsdata</strong> = {u'ip': u'broker.mqttdashboard.com', u'port': u'1883', u'systemid': u'appDesignSyst3m1', u'targetIp': u'192.168.137.1'}<br>
+<strong>systemID</strong> = u'appDesignSyst3m1'</td></tr></table>
+</body></html>

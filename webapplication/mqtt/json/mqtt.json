@@ -1,0 +1,19 @@
+{"mqtt":[
+        {
+		"baseTopic":"Ahoii",
+		"startPositionMsg":"startPosition",
+		"leftPositionMsg":"maxLeftPosition",
+		"rightPositionMsg":"maxRightPosition",
+		"startCamMsg":"startVideo",
+		"stopCamMsg":"stopCam",
+		"qos":2,
+		"infoMessage":"Test",
+		"alphaMessage":"alpha",
+		"gammaMessage":"gamma",
+		"startPositionMessage":"startPosition",
+		"leftPositionMessage":"leftPosition",
+		"rightPositionMessage":"rightPosition",
+		"startVideoMessage":"startVideo",
+		"stopVideoMessage":"stopVideo"
+        }
+]}

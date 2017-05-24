@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<hivemq xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="hivemq-config.xsd">
+
+    <listeners>
+        <tls-tcp-listener>
+            <port>8883</port>
+            <bind-address>0.0.0.0</bind-address>
+            <tls>
+                <keystore>
+                    <path>/path/to/the/key/store.jks</path>
+                    <password>password-keystore</password>
+                    <private-key-password>password-key</private-key-password>
+                </keystore>
+                <truststore>
+                    <path>/path/to/the/key/store.jks</path>
+                    <password>password-keystore</password>
+                </truststore>
+                <client-authentication-mode>NONE</client-authentication-mode>
+            </tls>
+        </tls-tcp-listener>
+    </listeners>
+    <mqtt>
+        <max-client-id-length>65535</max-client-id-length>
+        <retry-interval>10</retry-interval>
+    </mqtt>
+    <throttling>
+        <max-connections>-1</max-connections>
+        <max-message-size>268435456</max-message-size>
+        <outgoing-limit>0</outgoing-limit>
+        <incoming-limit>0</incoming-limit>
+    </throttling>
+    <general>
+        <update-check-enabled>true</update-check-enabled>
+    </general>
+
+</hivemq>

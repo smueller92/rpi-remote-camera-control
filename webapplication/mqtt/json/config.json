@@ -1,0 +1,9 @@
+{"config":[
+        {
+		"sleep":30,
+		"startFormationErrMsg":"You have to move to the start position first",
+		"disconMsg":"You are disconnected",
+		"VideoServerIP":"192.168.2.30",
+		"VideoServerPort":"8084"
+        }
+]}

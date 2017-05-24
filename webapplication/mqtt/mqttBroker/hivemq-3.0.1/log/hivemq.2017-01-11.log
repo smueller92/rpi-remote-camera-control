@@ -1,0 +1,137 @@
+2017-01-11 20:22:58,526 INFO  - Starting HiveMQ Server
+2017-01-11 20:22:58,541 INFO  - HiveMQ version: 3.0.1
+2017-01-11 20:22:58,557 INFO  - HiveMQ home directory: C:\Users\alex__000\Desktop\mqttBroker\hivemq-3.0.1
+2017-01-11 20:23:00,481 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2017-01-11 20:23:01,483 INFO  - The HiveMQ cluster ID is 69acb94f-298c-4a65-89ff-d4f9eced0871
+2017-01-11 20:23:01,630 INFO  - Loaded Plugin HiveMQ JMX Metrics Reporting Plugin - v3.0.0
+2017-01-11 20:23:01,630 INFO  - Loaded Plugin HiveMQ Sys Topic Plugin - v3.0.0
+2017-01-11 20:23:01,630 INFO  - Loaded Plugin HiveMQ MQTT Message Log Plugin - v3.0.0
+2017-01-11 20:23:01,646 INFO  - JMX Metrics Reporting started.
+2017-01-11 20:23:01,662 INFO  - Starting TCP listener on address 172.17.205.246 and port 1884
+2017-01-11 20:23:01,762 INFO  - Starting Websocket listener on address 172.17.205.246 and port 8000
+2017-01-11 20:23:01,782 ERROR - Could not start TCP Listener on port 1884 and address 172.17.205.246. Is it already in use?
+2017-01-11 20:23:01,783 ERROR - Could not start Websocket Listener on port 8000 and address 172.17.205.246. Is it already in use?
+2017-01-11 20:23:01,783 ERROR - Could not bind any listener. Stopping HiveMQ.
+2017-01-11 20:23:01,783 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2017-01-11 20:24:38,929 INFO  - Starting HiveMQ Server
+2017-01-11 20:24:38,929 INFO  - HiveMQ version: 3.0.1
+2017-01-11 20:24:38,929 INFO  - HiveMQ home directory: C:\Users\alex__000\Desktop\mqttBroker\hivemq-3.0.1
+2017-01-11 20:24:40,564 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2017-01-11 20:24:41,515 INFO  - The HiveMQ cluster ID is 0bf412f3-8e56-4308-a281-a95d23fd5d75
+2017-01-11 20:24:41,685 INFO  - Loaded Plugin HiveMQ JMX Metrics Reporting Plugin - v3.0.0
+2017-01-11 20:24:41,685 INFO  - Loaded Plugin HiveMQ Sys Topic Plugin - v3.0.0
+2017-01-11 20:24:41,685 INFO  - Loaded Plugin HiveMQ MQTT Message Log Plugin - v3.0.0
+2017-01-11 20:24:41,700 INFO  - JMX Metrics Reporting started.
+2017-01-11 20:24:41,700 INFO  - Starting TCP listener on address 192.168.137.1 and port 1884
+2017-01-11 20:24:41,816 INFO  - Starting Websocket listener on address 172.17.205.246 and port 8000
+2017-01-11 20:24:41,816 INFO  - Started TCP Listener on address 192.168.137.1 and on port 1884
+2017-01-11 20:24:41,816 ERROR - Could not start Websocket Listener on port 8000 and address 172.17.205.246. Is it already in use?
+2017-01-11 20:24:41,816 INFO  - Started HiveMQ in 2893ms
+2017-01-11 20:24:43,417 INFO  - A new HiveMQ Version (3.2.1) is available. Visit http://www.hivemq.com/ for more details.
+2017-01-11 20:25:34,062 INFO  - Starting HiveMQ Server
+2017-01-11 20:25:34,080 INFO  - HiveMQ version: 3.0.1
+2017-01-11 20:25:34,081 INFO  - HiveMQ home directory: C:\Users\alex__000\Desktop\mqttBroker\hivemq-3.0.1
+2017-01-11 20:25:35,587 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2017-01-11 20:25:36,390 INFO  - The HiveMQ cluster ID is a44dbf15-aa0f-4937-905f-dce59f8b5152
+2017-01-11 20:25:36,652 INFO  - Loaded Plugin HiveMQ JMX Metrics Reporting Plugin - v3.0.0
+2017-01-11 20:25:36,652 INFO  - Loaded Plugin HiveMQ Sys Topic Plugin - v3.0.0
+2017-01-11 20:25:36,652 INFO  - Loaded Plugin HiveMQ MQTT Message Log Plugin - v3.0.0
+2017-01-11 20:25:36,652 INFO  - JMX Metrics Reporting started.
+2017-01-11 20:25:36,668 INFO  - Starting TCP listener on address 192.168.137.1 and port 1884
+2017-01-11 20:25:36,768 INFO  - Starting Websocket listener on address 192.168.137.1 and port 8000
+2017-01-11 20:25:36,786 INFO  - Started TCP Listener on address 192.168.137.1 and on port 1884
+2017-01-11 20:25:36,786 INFO  - Started Websocket Listener on address 192.168.137.1 and on port 8000
+2017-01-11 20:25:36,787 INFO  - Started HiveMQ in 2710ms
+2017-01-11 20:25:37,238 INFO  - A new HiveMQ Version (3.2.1) is available. Visit http://www.hivemq.com/ for more details.
+2017-01-11 20:31:12,150 INFO  - Starting HiveMQ Server
+2017-01-11 20:31:12,169 INFO  - HiveMQ version: 3.0.1
+2017-01-11 20:31:12,170 INFO  - HiveMQ home directory: C:\Users\alex__000\Desktop\mqttBroker\hivemq-3.0.1
+2017-01-11 20:31:13,691 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2017-01-11 20:31:14,593 INFO  - The HiveMQ cluster ID is 8c0315f2-b081-449a-b22a-28b954b20294
+2017-01-11 20:31:14,809 INFO  - Loaded Plugin HiveMQ JMX Metrics Reporting Plugin - v3.0.0
+2017-01-11 20:31:14,809 INFO  - Loaded Plugin HiveMQ Sys Topic Plugin - v3.0.0
+2017-01-11 20:31:14,809 INFO  - Loaded Plugin HiveMQ MQTT Message Log Plugin - v3.0.0
+2017-01-11 20:31:14,809 INFO  - JMX Metrics Reporting started.
+2017-01-11 20:31:14,824 INFO  - Starting TCP listener on address 192.168.137.1 and port 1884
+2017-01-11 20:31:14,925 INFO  - Starting Websocket listener on address 192.168.137.1 and port 8000
+2017-01-11 20:31:14,940 INFO  - Started TCP Listener on address 192.168.137.1 and on port 1884
+2017-01-11 20:31:14,940 INFO  - Started Websocket Listener on address 192.168.137.1 and on port 8000
+2017-01-11 20:31:14,940 INFO  - Started HiveMQ in 2782ms
+2017-01-11 20:31:15,125 INFO  - A new HiveMQ Version (3.2.1) is available. Visit http://www.hivemq.com/ for more details.
+2017-01-11 20:55:57,823 INFO  - Client myclientid_88 connected
+2017-01-11 20:57:22,176 INFO  - Client myclientid_88 disconnected
+2017-01-11 20:57:23,027 INFO  - Client myclientid_8 connected
+2017-01-11 20:57:30,690 INFO  - Client myclientid_8 sent a message to topic "Ahoii/appDesignSyst3m1/Test": "button clicked !" (QoS: 2, retained: false)
+2017-01-11 21:07:43,865 INFO  - Client myclientid_8 disconnected
+2017-01-11 21:18:54,857 INFO  - Client myclientid_10 connected
+2017-01-11 21:19:03,984 INFO  - Client myclientid_10 sent a message to topic "Ahoii/appDesignSyst3m1/Test": "button clicked !" (QoS: 2, retained: false)
+2017-01-11 21:24:15,024 INFO  - Client myclientid_10 disconnected
+2017-01-11 21:52:54,488 INFO  - Client myclientid_15 connected
+2017-01-11 21:53:36,164 INFO  - Client myclientid_15 disconnected
+2017-01-11 21:56:49,442 INFO  - Client myclientid_78 connected
+2017-01-11 21:57:21,864 INFO  - Client myclientid_78 disconnected
+2017-01-11 21:57:57,113 INFO  - Client myclientid_43 connected
+2017-01-11 21:58:34,766 INFO  - Client myclientid_43 disconnected
+2017-01-11 22:00:31,994 INFO  - Client myclientid_45 connected
+2017-01-11 22:00:50,501 INFO  - Client myclientid_45 disconnected
+2017-01-11 22:03:41,589 INFO  - Client myclientid_4 connected
+2017-01-11 22:03:57,699 INFO  - Client myclientid_4 disconnected
+2017-01-11 22:04:04,265 INFO  - Client myclientid_49 connected
+2017-01-11 22:04:30,216 INFO  - Client myclientid_49 disconnected
+2017-01-11 22:04:32,794 INFO  - Client myclientid_15 connected
+2017-01-11 22:04:48,340 INFO  - Client myclientid_15 disconnected
+2017-01-11 22:05:21,397 INFO  - Client myclientid_80 connected
+2017-01-11 22:06:04,054 INFO  - Client myclientid_80 disconnected
+2017-01-11 22:06:06,092 INFO  - Client myclientid_71 connected
+2017-01-11 22:06:29,562 INFO  - Client myclientid_71 disconnected
+2017-01-11 22:09:16,335 INFO  - Client myclientid_74 connected
+2017-01-11 22:09:18,845 INFO  - Client myclientid_74 sent a message to topic "Ahoii/undefined/Test": "button clicked !" (QoS: 2, retained: false)
+2017-01-11 22:11:54,788 INFO  - Client myclientid_74 disconnected
+2017-01-11 22:11:56,758 INFO  - Client myclientid_61 connected
+2017-01-11 22:12:00,210 INFO  - Client myclientid_61 disconnected
+2017-01-11 22:12:02,238 INFO  - Client myclientid_34 connected
+2017-01-11 22:12:11,746 INFO  - Client myclientid_34 disconnected
+2017-01-11 22:12:13,797 INFO  - Client myclientid_64 connected
+2017-01-11 22:12:21,764 INFO  - Client myclientid_64 disconnected
+2017-01-11 22:12:24,529 INFO  - Client myclientid_67 connected
+2017-01-11 22:12:50,467 INFO  - Client myclientid_67 disconnected
+2017-01-11 22:13:01,450 INFO  - Client myclientid_16 connected
+2017-01-11 22:14:09,215 INFO  - Client myclientid_16 disconnected
+2017-01-11 22:14:11,261 INFO  - Client myclientid_72 connected
+2017-01-11 22:14:29,143 INFO  - Client myclientid_72 disconnected
+2017-01-11 22:19:02,887 INFO  - Client myclientid_44 connected
+2017-01-11 22:22:39,087 INFO  - Client myclientid_44 disconnected
+2017-01-11 22:22:42,026 INFO  - Client myclientid_75 connected
+2017-01-11 22:22:54,781 INFO  - Subscribe from client myclientid_75 received: Ahoii/appDesignSyst3m1/# QoS: 2
+2017-01-11 22:23:59,808 INFO  - Client myclientid_75 disconnected
+2017-01-11 22:24:05,925 INFO  - Client myclientid_12 connected
+2017-01-11 22:24:34,826 INFO  - Client myclientid_12 disconnected
+2017-01-11 22:24:36,474 INFO  - Client myclientid_99 connected
+2017-01-11 22:24:58,598 INFO  - Client myclientid_99 disconnected
+2017-01-11 22:25:02,159 INFO  - Client myclientid_36 connected
+2017-01-11 22:25:09,437 INFO  - Client myclientid_36 disconnected
+2017-01-11 22:25:25,489 INFO  - Client myclientid_64 connected
+2017-01-11 22:26:27,283 INFO  - Client myclientid_64 disconnected
+2017-01-11 22:28:56,721 INFO  - Client myclientid_38 connected
+2017-01-11 22:29:51,173 INFO  - Client myclientid_38 disconnected
+2017-01-11 22:30:01,816 INFO  - Client myclientid_17 connected
+2017-01-11 22:30:03,927 INFO  - Client myclientid_17 sent a message to topic "Ahoii/undefined/Test": "button clicked !" (QoS: 2, retained: false)
+2017-01-11 22:30:12,881 INFO  - Client myclientid_17 disconnected
+2017-01-11 22:30:14,740 INFO  - Client myclientid_7 connected
+2017-01-11 22:31:02,785 INFO  - Client myclientid_7 disconnected
+2017-01-11 22:31:03,930 INFO  - Client myclientid_98 connected
+2017-01-11 22:31:08,546 INFO  - Client myclientid_98 sent a message to topic "Ahoii/undefined/Test": "button clicked !" (QoS: 2, retained: false)
+2017-01-11 22:32:04,144 INFO  - Client myclientid_98 disconnected
+2017-01-11 22:32:06,559 INFO  - Client myclientid_22 connected
+2017-01-11 22:32:08,690 INFO  - Client myclientid_22 sent a message to topic "Ahoii/undefined/Test": "button clicked !" (QoS: 2, retained: false)
+2017-01-11 22:32:36,579 INFO  - Client myclientid_22 disconnected
+2017-01-11 22:32:38,992 INFO  - Client myclientid_37 connected
+2017-01-11 22:32:41,091 INFO  - Client myclientid_37 sent a message to topic "Ahoii/undefined/Test": "button clicked !" (QoS: 2, retained: false)
+2017-01-11 22:34:22,034 INFO  - Client myclientid_37 disconnected
+2017-01-11 22:34:35,682 INFO  - Client myclientid_12 connected
+2017-01-11 22:34:37,726 INFO  - Client myclientid_12 sent a message to topic "Ahoii/appDesignSyst3m1/Test": "button clicked !" (QoS: 2, retained: false)
+2017-01-11 22:35:19,197 INFO  - Client myclientid_12 disconnected
+2017-01-11 22:35:21,293 INFO  - Client myclientid_45 connected
+2017-01-11 22:36:05,482 INFO  - Client myclientid_46 connected
+2017-01-11 22:36:45,744 INFO  - Client myclientid_45 disconnected
+2017-01-11 22:36:45,744 INFO  - Client myclientid_46 disconnected
