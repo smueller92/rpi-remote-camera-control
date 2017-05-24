@@ -14,8 +14,27 @@ This Prototype uses the following components:
 http://www.exp-tech.de/raspberry-pi-kamerahalterung?gclid=Cj0KEQiA08rBBR-DUn4qproqwzYMBEiQAqpzns2OCN2veDyvJ5fQdBhPXfeCb0ru8NBU-TeEDS6dJiy_oaAkUo8P8HAQ
 #### Pan-Tilt Kit with Servo-Motors:
 http://www.exp-tech.de/dagu-pan-tilt-kit-with-servos?gclid=Cj0KEQiA08rBBR-DUn4qproqwzYMBEiQAqpzns8qGGMGf9-_mTLiQbipMpNHeQY-E8uau1437SaPlqqcaAlt18P8HAQ
+#### Breakaway Platin Pins (optional for Servo-Motor Cable-Socket Extension)
+https://www.amazon.de/Steckerleiste-Kopfleiste-Stiftleiste-Stecker-Arduino/dp/B01LWD5MPB/ref=sr_1_2?s=ce-de&ie=UTF8&qid=1495632244&sr=1-2&keywords=pin+arduino
 
 # Installation
+- Put together the Pan/Tilt Kit and attach the Camera Bracket
+- Mount the Rpi Camera onto the Bracket
+- Extend the Servomotor Cable Sockets with Pins or just cut away the Socket
+- Make sure the Raspberry Pi 3 is turned off
+- **Plug in the Servo Cables as followed:**
+```Servo for X Movement (Left/Right or Smartphone Alpha Sensor): 
+Data (Orange)  -> Pin 7 (GPIO-4)
+Power (Red)    -> Pin 2 (DC Power 5V)
+Ground (Brown) -> Pin 9 (Ground)
+
+Servo for Y Movement (Up/Down or Smartphone Gamma Sensor):
+Data (Orange)  -> Pin 11 (GPIO-17)
+Power (Red)    -> Pin 4 (DC Power 5V)
+Ground (Brown) -> Pin 6 (Ground)
+```
+Raspberry PI 3 Pinout Help Image: 
+https://www.element14.com/community/servlet/JiveServlet/previewBody/73950-102-10-339300/pi3_gpio.png
 ### Server (Windows PC)
 - Install XAMPP: https://www.apachefriends.org/de/download.html
 - Extract mqtt folder to C:\xampp\htdocs
