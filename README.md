@@ -1,6 +1,7 @@
 # Raspberry PI Camera Movement Control
 ## Control your Raspberry PI Camera by using your Smartphone
 In this project I have created a Remote Camera Control Prototype with a Raspberry PI. The Raspberry PI Camera is attached to a Pan/Tilt Kit with two servo-motors for X and Y Movement. You can control the motor's movement with sensors integrated in your Smartphone by simply opening up a Web Page in your Browser. The Project is using the MQTT Protocol to send the Smartphone's sensor data to your Raspberry. The required Web Application is stored on your Windows Computer which acts as the MQTT Server.
+Another important goal for this university project was to write the code according to the SOLID principles.
 
 ## How Does It Work?
 Your Windows PC is using a local Apache Server to host the Web Application. After opening the Web Application on your Smartphone's Browser the Application processes the Phone's Sensor Data and sends them to multiple MQTT Channels. 
@@ -56,6 +57,7 @@ $ sudo apt-get update
 $ sudo apt-get upgrade
 ```
 - extract 'mover' folder to e.g. Rasbperry Pi Desktop
+- Fill in your personal data in mover/settings.json
 - Setup Servoblaster:
 ```
 $ cd /Desktop/mover/Servoblaster/user
@@ -69,7 +71,7 @@ $ sudo python start.py
 ### Smartphone
 - Open Browser (tested with Google Chrome)
 - type [Windows-IP-Adress]/rasp (e.g. 192.168.2.30/rasp)
-- Press Connect
+- Fill in BrokerIP and Port and Connect
 - Press Move To Start Position
 - Press Start Movement
 - Now you can move the Camera-Pan-Tilt-Kit by rotating your Smartphone
@@ -104,11 +106,21 @@ sudo make install
 node
 npm install npm -g
 npm install jsmpeg
+npm install ws
 cd C:/xampp/htdocs/rasp/jsmpeg
 node stream-server.js admin
 ```
+(admin is the password. Has to be the same like in the startVideo class on raspberry)
+
 - open index.html in 'rasp' folder and insert your Windows-IP
 ```
 var client = new WebSocket( 'ws://WINDOWS_IP:8084/' );
 ```
 - Press Livestream Button on Smartphone and you can see the stream on your Desktop Browser
+
+## Own Broker(opional)(hivemq Test broker)
+- If you don't want a public mqtt broker like broker.mqttdashboard.com you can use your own hivemq broker (limit to 25 clients)
+- Go to mqttBroker -> hivemq-3.0.1 -> conf folder
+- In the config.xml insert your ip between the the tcp-listener and websocket-listener tags
+- in the bin folder: run run.bat to start the broker
+- For the other configuration you can now use your Ip as the mqtt-broker address
