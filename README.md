@@ -18,12 +18,14 @@ http://www.exp-tech.de/dagu-pan-tilt-kit-with-servos?gclid=Cj0KEQiA08rBBR-DUn4qp
 https://www.amazon.de/Steckerleiste-Kopfleiste-Stiftleiste-Stecker-Arduino/dp/B01LWD5MPB/ref=sr_1_2?s=ce-de&ie=UTF8&qid=1495632244&sr=1-2&keywords=pin+arduino
 
 # Installation
+### Hardware Setup
 - Put together the Pan/Tilt Kit and attach the Camera Bracket
 - Mount the Rpi Camera onto the Bracket
 - Extend the Servomotor Cable Sockets with Pins or just cut away the Socket
 - Make sure the Raspberry Pi 3 is turned off
 - **Plug in the Servo Cables as followed:**
-```Servo for X Movement (Left/Right or Smartphone Alpha Sensor): 
+```
+Servo for X Movement (Left/Right or Smartphone Alpha Sensor):
 Data (Orange)  -> Pin 7 (GPIO-4)
 Power (Red)    -> Pin 2 (DC Power 5V)
 Ground (Brown) -> Pin 9 (Ground)
