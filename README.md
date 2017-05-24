@@ -4,8 +4,7 @@ In this project I have created a Remote Camera Control Prototype with a Raspberr
 Another important goal for this university project was to write the code according to the SOLID principles.
 
 ## How Does It Work?
-Your Windows PC is using a local Apache Server to host the Web Application. After opening the Web Application on your Smartphone's Browser the Application processes the Phone's Sensor Data and sends them to multiple MQTT Channels. 
-The Software running on the Raspberry is listening to any incoming MQTT Messages from your MQTT Server (Windows PC) and sends the converted Sensor Data as PWM Signals to the servo-motors of the Camera Pan/Tilt Kit.
+Your Windows PC is using a local Apache Server to host the Web Application. After opening the Web Application on your Smartphone's Browser the Application processes the Phone's Sensor Data and sends them to multiple MQTT Channels of a public MQTT Broker. The Software running on the Raspberry is listening to any incoming MQTT Messages from your MQTT Server (Windows PC) and sends the converted Sensor Data as PWM Signals to the servo-motors of the Camera Pan/Tilt Kit.
 
 ## Hardware
 This Prototype uses the following components:
