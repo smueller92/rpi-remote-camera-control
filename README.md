@@ -1,7 +1,7 @@
 # Raspberry PI Camera Movement Control
 ## Control your Raspberry PI Camera by using your Smartphone
 In this project I have created a Remote Camera Control Prototype with a Raspberry PI. The Raspberry PI Camera is attached to a Pan/Tilt Kit with two servo-motors for X and Y Movement. You can control the motor's movement with sensors integrated in your Smartphone by simply opening up a Web Page in your Browser. The Project is using the MQTT Protocol to send the Smartphone's sensor data to your Raspberry. The required Web Application is stored on your Windows Computer which acts as the MQTT Server.
-Another important goal for this university project was to write the code according to the SOLID principles.
+You could also realize this project using your Smartphone's Mobile Hotspot, but for this university project we had to use the MQTT protocol. A mobile hotspot may give even a better latency and performance. Another important goal for this project was to write 'good' code according to the SOLID principles. 
 
 ## How Does It Work?
 Your Windows PC is using a local Apache Server to host the Web Application. After opening the Web Application on your Smartphone's Browser the Application processes the Phone's Sensor Data and sends them to multiple MQTT Channels of a public MQTT Broker. The Software running on the Raspberry is listening to any incoming MQTT Messages from your MQTT Server (Windows PC) and sends the converted Sensor Data as PWM Signals to the servo-motors of the Camera Pan/Tilt Kit.
