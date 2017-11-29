@@ -118,7 +118,7 @@ var client = new WebSocket( 'ws://WINDOWS_IP:8084/' );
 ```
 - Press Livestream Button on Smartphone and you can see the stream on your Desktop Browser
 
-## Own Broker(opional)(hivemq Test broker)
+## Own Broker(optional)(hivemq Test broker)
 - If you don't want a public mqtt broker like broker.mqttdashboard.com you can use your own hivemq broker (limit to 25 clients)
 - Go to mqttBroker -> hivemq-3.0.1 -> conf folder
 - In the config.xml insert your ip between the the tcp-listener and websocket-listener tags
